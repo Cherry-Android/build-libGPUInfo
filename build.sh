@@ -14,6 +14,6 @@ export ANDROID_NDK_HOME=${WORKSPACE}/android-ndk-r27d
 # Clone libGPUInfo source
 git clone https://github.com/ARM-software/libGPUInfo.git
 
-pushd ${WORKSPACE}/libGPUInfo
+pushd ${WORKSPACE}/libGPUInfo > /dev/null
 ./android_build.sh Release
-popd
+popd > /dev/null
